@@ -64,42 +64,32 @@ export const navigation: NavItem[] = [
 		showInFooter: true,
 		children: [
 			{
-				label: "Healthcare",
-				href: "/use-cases/healthcare",
+				label: "Automotive Manufacturing",
+				href: "/use-cases/automotive-manufacturing",
 				image:
-					"https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=1920&auto=format&fit=crop",
-
+					"/generated/image-a-dynamic-scene-of-automotive-manufactur.webp",
 				description:
-					"Innovative solutions for patient care, delivering advanced analytics to improve diagnostics, enhancing personalized treatment plans through real‑time data insights, and seamlessly integrating with existing healthcare systems to drive better outcomes and streamline clinical workflows",
+					"Transform complex assembly procedures into AR-guided workflows. Cut training time from weeks to days while reducing defects and improving quality scores across manufacturing operations.",
 				showInNav: true,
 				showInFooter: true
 			},
 			{
-				label: "Finance",
-				href: "/use-cases/finance",
+				label: "Food Production",
+				href: "/use-cases/food-production",
 				image:
-					"https://images.unsplash.com/photo-1638913662180-afc4334cf422?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"/generated/image-a-vibrant-image-of-food-production-worke.webp",
 				description:
-					"Streamlining operations and compliance across financial services by automating regulatory reporting, strengthening risk management, integrating advanced real‑time analytics, and ensuring robust audit trails for enhanced governance and operational efficiency",
+					"Convert safety protocols and production procedures into interactive guides. Ensure HACCP compliance while reducing operator errors and improving efficiency in food processing facilities.",
 				showInNav: true,
 				showInFooter: true
 			},
 			{
-				label: "Technology",
-				href: "/use-cases/technology",
+				label: "Oil and Gas",
+				href: "/use-cases/oil-and-gas",
 				image:
-					"https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"/generated/image-a-busy-scene-of-oil-and-gas-workers-on-a.webp",
 				description:
-					"Cutting-edge tools for tech companies, offering scalable cloud-based platforms, AI-driven development frameworks, secure collaboration environments, and streamlined deployment pipelines to accelerate innovation and deliver market-leading solutions",
-				showInNav: true,
-				showInFooter: true
-			},
-			{
-				label: "Education",
-				href: "/use-cases/education",
-				image:
-					"https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-				description: "Enhancing learning experiences",
+					"Turn maintenance manuals and safety procedures into immersive AR instructions. Reduce incidents while ensuring regulatory compliance and operational excellence in energy operations.",
 				showInNav: true,
 				showInFooter: true
 			}

@@ -24,18 +24,18 @@
 
 	const benefits = [
 		{
-			title: "Flexible Work",
-			description: "Remote-first with flexible hours that respect work-life balance.",
+			title: "Work that connects to the real world",
+			description: "Your work impacts the people who build, operate, fix, and make real things every day. Help us make sure they have what they need—exactly when they need it.",
 			icon: IconBriefcase
 		},
 		{
-			title: "Growth Opportunities",
-			description: "Continuous learning with mentorship and education stipends.",
+			title: "Grow on the edge of what's possible",
+			description: "We're building genuinely new technology. Backed by Sequoia and named one of Fast Company's Most Innovative Companies of 2025, we've only just begun.",
 			icon: IconUsers
 		},
 		{
-			title: "Comprehensive Benefits",
-			description: "Health coverage, retirement plans, and generous paid time off.",
+			title: "Make an impact without the noise",
+			description: "You'll work directly with other smart people, with the autonomy and support to ship meaningful work—fast.",
 			icon: IconHeart
 		}
 	];
@@ -43,21 +43,21 @@
 	const openings: JobOpening[] = [
 		// Engineering
 		{
-			title: "Senior Frontend Developer",
+			title: "Senior Software Engineer - Backend/Full Stack",
 			department: "Engineering",
 			location: "Remote",
 			type: "Full-time",
 			url: "#"
 		},
 		{
-			title: "Backend Engineer",
+			title: "Staff Software Engineer - Backend/Full Stack",
 			department: "Engineering",
 			location: "Remote",
 			type: "Full-time",
 			url: "#"
 		},
 		{
-			title: "Design Engineer",
+			title: "IT & Security Operations Manager",
 			department: "Engineering",
 			location: "Remote",
 			type: "Full-time",
@@ -66,14 +66,7 @@
 
 		// Design
 		{
-			title: "UX/UI Designer",
-			department: "Design",
-			location: "Remote",
-			type: "Full-time",
-			url: "#"
-		},
-		{
-			title: "Product Designer",
+			title: "Designer",
 			department: "Design",
 			location: "Remote",
 			type: "Full-time",
@@ -82,38 +75,49 @@
 
 		// Product
 		{
-			title: "Product Manager",
-			department: "Product",
-			location: "Remote",
-			type: "Full-time",
-			url: "#"
-		},
-		{
-			title: "Product Analyst",
-			department: "Product",
+			title: "Director of Product",
+			department: "Product Management",
 			location: "Remote",
 			type: "Full-time",
 			url: "#"
 		},
 
-		// Marketing
+		// Sales & Marketing
 		{
-			title: "Marketing Specialist",
-			department: "Marketing",
+			title: "Account Director",
+			department: "Sales & Marketing",
 			location: "Remote",
 			type: "Full-time",
 			url: "#"
 		},
 		{
-			title: "Content Strategist",
-			department: "Marketing",
+			title: "Strategic Account Executive",
+			department: "Sales & Marketing",
 			location: "Remote",
 			type: "Full-time",
 			url: "#"
 		},
 		{
-			title: "Social Media Manager",
-			department: "Marketing",
+			title: "Go-To-Market Engineer",
+			department: "Sales & Marketing",
+			location: "Remote",
+			type: "Full-time",
+			url: "#"
+		},
+
+		// Customer Success
+		{
+			title: "Implementation Leader",
+			department: "Customer Success",
+			location: "Remote",
+			type: "Full-time",
+			url: "#"
+		},
+
+		// General & Administrative
+		{
+			title: "Executive Assistant",
+			department: "General & Administrative",
 			location: "Remote",
 			type: "Full-time",
 			url: "#"
@@ -122,68 +126,73 @@
 
 	const employeeTestimonials = [
 		{
-			name: "Michael Chen",
-			position: "Senior Developer",
-			company: "Engineering Team",
+			name: "Ayman Florentino",
+			position: "Senior Software Engineer",
+			company: "Engineering",
 			quote:
-				"Working here has given me the opportunity to tackle challenging problems while maintaining a healthy work-life balance. The team culture is supportive and collaborative.",
+				"I joined to work on real-world problems, and Squint delivers on that every day. We're building AI-based tools that make industrial jobs safer and faster, and nothing we do sits in a hypothetical. Last month alone, I helped ship a new feature that's already in use on manufacturing lines across three countries. The technical bar here is high, but the feedback loop with customers is even faster—which is incredibly motivating.",
 			image:
-				"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+				"/generated/image-a-hispanic-male-software-engineer-smilin.webp"
 		},
 		{
-			name: "Priya Sharma",
-			position: "Product Designer",
-			company: "Design Team",
+			name: "Saige Chang",
+			position: "Product Design Lead",
+			company: "Product and Design",
 			quote:
-				"The creative freedom and opportunity to influence product decisions makes this the best place I've ever worked. I'm constantly learning and growing.",
+				"What drew me in was a remote culture that actually feels human. Squint practices deep collaboration without constant meetings—instead, it's clear expectations, trust, and meaningful work. I've grown more here in a year than I did in three elsewhere. Being able to sketch, test, and scale a design directly with real operator workflows is something very few product teams get to do.",
 			image:
-				"https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+				"/generated/image-an-asian-female-product-designer-in-casu.webp"
 		},
 		{
-			name: "Marcus Johnson",
-			position: "Marketing Lead",
-			company: "Marketing Team",
+			name: "Julien Dorsey",
+			position: "Customer Success Manager",
+			company: "Sales and Customer Success",
 			quote:
-				"I joined three years ago and have grown tremendously. The leadership truly invests in your development and the work environment is both challenging and supportive.",
+				"In my first eight weeks, I got to lead a proof-of-concept rollout for a global industrial customer—working directly with their ops, learning team, and floor technicians. That level of ownership is rare, and it's one of the reasons Squint moves faster than most startups I've seen. Add in a supportive team, badgeless logins, fast demos, and well-built tools… it all just clicks.",
 			image:
-				"https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+				"/generated/image-a-black-male-customer-success-manager-dr.webp"
 		}
 	];
 
 	const processSteps = [
 		{
 			step: 1,
-			title: "Apply",
+			title: "Apply with your résumé",
 			description:
-				"Submit your application through our careers portal with your resume and portfolio."
+				"Tell us who you are and why Squint excites you. We want to understand your background and interests."
 		},
 		{
 			step: 2,
-			title: "Interview",
-			description: "Meet with our team to discuss your experience, skills, and career aspirations."
+			title: "Intro call",
+			description: "A short conversation to answer questions and dig into your experience. We'll explore how you might fit with our team."
 		},
 		{
 			step: 3,
-			title: "Welcome aboard",
-			description: "Join our team and start your journey building the future with us."
+			title: "Challenge",
+			description: "A working session or exercise focused on real-world tasks. This helps us see how you approach problems."
+		},
+		{
+			step: 4,
+			title: "Final chat",
+			description: "Meet the extended team, go over your work, and decide next steps. We move thoughtfully and respect your time."
 		}
 	];
 
 	const values = [
 		{
 			icon: IconHeart,
-			title: "Passion",
-			description: "We're driven by a shared passion for innovation and excellence."
+			title: "Purpose over process",
+			description: "We care about outcomes, not red tape. Thoughtful work wins over checklists."
 		},
 		{
 			icon: IconUsers,
-			title: "Collaboration",
-			description: "We believe in teamwork and collaboration to achieve great things."
+			title: "Remote, not distant",
+			description: "We work where we are, but come together often—with honesty, intentionality, and care."
 		},
 		{
 			icon: IconGlobe,
-			title: "Global Impact",
-			description: "We're committed to making a positive impact on the world."
+			title: "High bar, low ego",
+			description: "We take the work seriously, not ourselves. We debate fast, align quickly, and learn from each other."
 		}
 	];
 </script>
@@ -191,14 +200,14 @@
 <!-- Hero Section -->
 
 <SecondaryHero
-	title="Join our team of innovators"
-	subtitle="We're looking for passionate people to help us build the future of digital experiences. Discover your next opportunity with us."
-	imageSrc="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+	title="Build the future of industrial work"
+	subtitle="Join the team named one of Fast Company's most innovative companies of 2025. We're remote by design, with a strong culture built on trust, growth, and real connection."
+	imageSrc="/generated/image-a-group-of-diverse-professionals-working.webp"
 />
 
 <!-- Why Join Us Section -->
 <section class={SECTION_BASE_CLASSES}>
-	<SectionHeader title="Why join us?" subtitle="Build your career while making an impact" />
+	<SectionHeader title="Why join Squint" subtitle="Work remotely, stay connected. We're a remote-first team that values real connection." />
 
 	<div class="mt-16 grid gap-4 md:grid-cols-3">
 		{#each benefits as benefit}
@@ -215,9 +224,9 @@
 <!-- Application Process -->
 <section class={SECTION_BASE_CLASSES}>
 	<div class="mx-auto">
-		<h2 class="text-title1 mb-16">Our application process</h2>
+		<h2 class="text-title1 mb-16">Application process</h2>
 
-		<div class="grid gap-12 md:grid-cols-3">
+		<div class="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
 			{#each processSteps as { step, title, description }, i}
 				<div class="flex flex-col">
 					<div class="{ICON_CONTAINER_CLASSES} mb-6 size-11">

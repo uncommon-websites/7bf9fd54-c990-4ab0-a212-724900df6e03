@@ -2,5 +2,101 @@
   {
     "prompt": "A skilled industrial manufacturing worker, wearing safety gear, operating a large machine in a brightly lit, spacious factory. The worker appears focused and confident, surrounded by various pieces of industrial equipment. The environment is clean and organized, with metallic surfaces and structured layouts.",
     "filename": "/generated/image-a-skilled-industrial-manufacturing-worke.webp"
+  },
+  {
+    "prompt": "A professional male operations manager wearing a hard hat and safety vest, standing in an automotive manufacturing facility. The background is bustling with assembly line workers and machinery. The manager is observing the production process, conveying a sense of leadership and efficiency. The atmosphere is dynamic and industrious.",
+    "filename": "/generated/image-a-professional-male-operations-manager-w.webp"
+  },
+  {
+    "prompt": "A professional female safety director wearing a hard hat and safety goggles, standing in an oil and gas facility. She is engaged in a conversation with a team of workers, emphasizing teamwork and safety. The setting is filled with pipelines and industrial equipment, with a focus on safety and collaboration.",
+    "filename": "/generated/image-a-professional-female-safety-director-we.webp"
+  },
+  {
+    "prompt": "A professional male quality control manager in a food processing facility, wearing a lab coat and hairnet. He is inspecting products on a conveyor belt, ensuring quality standards. The environment is clean and organized, with workers in the background maintaining the production line. The scene conveys attention to detail and quality assurance.",
+    "filename": "/generated/image-a-professional-male-quality-control-mana.webp"
+  },
+  {
+    "prompt": "A group of industrial workers standing on a factory floor, engaged in a lively discussion, with various industrial equipment around them. They are dressed in standard safety gear, such as helmets and protective clothing, emphasizing a collaborative learning environment.",
+    "filename": "/generated/image-a-group-of-industrial-workers-standing-o.webp"
+  },
+  {
+    "prompt": "A manufacturing team gathered in an industrial facility, attentively listening to a safety officer demonstrating safety compliance procedures. The setting is filled with machinery and tools, and the team members are wearing safety gear, indicating a focus on compliance and teamwork.",
+    "filename": "/generated/image-a-manufacturing-team-gathered-in-an-indu.webp"
+  },
+  {
+    "prompt": "An experienced technician and a new employee standing together in a workshop area, surrounded by various tools and equipment. The technician is explaining a process, with both individuals wearing protective gear, highlighting a mentor-mentee relationship in a professional setting.",
+    "filename": "/generated/image-an-experienced-technician-and-a-new-empl.webp"
+  },
+  {
+    "prompt": "A dynamic scene of automotive manufacturing workers assembling vehicles on a bustling factory floor, showcasing diverse workers in protective gear, surrounded by car parts and tools, with a background of large machinery and assembly lines.",
+    "filename": "/generated/image-a-dynamic-scene-of-automotive-manufactur.webp"
+  },
+  {
+    "prompt": "A vibrant image of food production workers in a clean, industrial facility, focusing on a diverse group of workers wearing hygienic clothing, engaged in various tasks involving fresh produce and machinery, with a backdrop of stainless steel equipment and storage areas.",
+    "filename": "/generated/image-a-vibrant-image-of-food-production-worke.webp"
+  },
+  {
+    "prompt": "A busy scene of oil and gas workers on an industrial platform, featuring a diverse team in safety gear working collaboratively, with the platform's metal structures and pipes in the background, set against a backdrop of the open sea and sky.",
+    "filename": "/generated/image-a-busy-scene-of-oil-and-gas-workers-on-a.webp"
+  },
+  {
+    "prompt": "A professional headshot of a tech founder in an industrial environment. The founder is standing confidently with a slight smile, wearing a smart-casual attire. The background showcases large metal beams and machinery, with a warm, natural light filtering through. The setting conveys a sense of innovation and industriousness without any tech gadgets or screens.",
+    "filename": "/generated/image-a-professional-headshot-of-a-tech-founde.webp"
+  },
+  {
+    "prompt": "A cheerful industrial worker, wearing safety gear, stands confidently in a busy manufacturing facility. The worker is surrounded by various machinery and equipment, with colleagues in the background engaged in different tasks. The setting is bright and dynamic, showcasing a sense of teamwork and productivity.",
+    "filename": "/generated/image-a-cheerful-industrial-worker-wearing-saf.webp"
+  },
+  {
+    "prompt": "Professional headshot of a CEO in an industrial manufacturing environment, with machinery and workers in the background. The CEO is wearing a formal suit, exuding confidence and leadership. The setting is a bustling factory floor, with workers attending to various tasks, and large equipment visible in the background.",
+    "filename": "/generated/image-professional-headshot-of-a-ceo-in-an-ind.webp"
+  },
+  {
+    "prompt": "A professional headshot of a business founder, featuring a confident and approachable expression. The individual is dressed in formal business attire, set against a simple, clean background that emphasizes the subject's face. Ensure a variety of poses and angles to maintain diversity, such as having the subject look straight at the camera, slightly turned, or with crossed arms. Lighting should be soft and flattering to highlight facial features without harsh shadows.",
+    "filename": "/generated/image-a-professional-headshot-of-a-business-fo.webp"
+  },
+  {
+    "prompt": "A group of diverse professionals working together in a cozy home office setting. They are engaged in a lively discussion around a table, with laptops open in front of them. The room is warmly lit, with a large window showing a garden outside. The team includes a variety of individuals of different ethnicities and genders, all focused on their collaborative work.",
+    "filename": "/generated/image-a-group-of-diverse-professionals-working.webp"
+  },
+  {
+    "prompt": "A professional headshot of a black male software engineer with a joyful smile, wearing a neatly pressed shirt, in a well-lit office environment filled with plants and bookshelves to add warmth and character.",
+    "filename": "/generated/image-a-professional-headshot-of-a-black-male-.webp"
+  },
+  {
+    "prompt": "A professional headshot of a South Asian female product manager with a confident smile, dressed in a stylish blazer, standing in a modern office space with natural lighting and tasteful decor to create a welcoming atmosphere.",
+    "filename": "/generated/image-a-professional-headshot-of-a-south-asian.webp"
+  },
+  {
+    "prompt": "A professional headshot of a Hispanic male sales director with a friendly expression, wearing a crisp suit, in a contemporary office setting with large windows and indoor plants to provide a fresh and vibrant background.",
+    "filename": "/generated/image-a-professional-headshot-of-a-hispanic-ma.webp"
+  },
+  {
+    "prompt": "A Hispanic male software engineer smiling confidently, wearing a smart casual shirt. The background showcases a modern office with blurred elements to focus on the subject's features. The lighting is natural, highlighting his facial expressions.",
+    "filename": "/generated/image-a-hispanic-male-software-engineer-smilin.webp"
+  },
+  {
+    "prompt": "An Asian female product designer in casual business attire, exuding creativity and engagement. She is set against a softly focused office environment that emphasizes her professional demeanor. The natural light enhances her features and the vibrant colors of her attire.",
+    "filename": "/generated/image-an-asian-female-product-designer-in-casu.webp"
+  },
+  {
+    "prompt": "A Black male customer success manager dressed in professional attire, standing in a bright, contemporary workspace. The background is slightly out of focus to draw attention to his confident stance and professional appearance. The lighting is bright and welcoming.",
+    "filename": "/generated/image-a-black-male-customer-success-manager-dr.webp"
+  },
+  {
+    "prompt": "A diverse group of industrial workers, each smiling confidently, standing in a bustling manufacturing facility. The background shows various machinery and equipment, with workers in safety gear engaging in different tasks, creating a lively and productive atmosphere.",
+    "filename": "/generated/image-a-diverse-group-of-industrial-workers-ea.webp"
+  },
+  {
+    "prompt": "A professional headshot of a Latino man, dressed in business attire, standing confidently in front of a manufacturing plant. The background subtly shows the plant environment, with workers and machinery in the distance, creating a sense of an active, bustling industrial setting.",
+    "filename": "/generated/image-a-professional-headshot-of-a-latino-man-.webp"
+  },
+  {
+    "prompt": "A professional headshot of an African American woman, elegantly dressed in business attire, positioned in an industrial facility. The background captures the essence of the facility with workers and industrial equipment visible, suggesting a dynamic and engaging work environment.",
+    "filename": "/generated/image-a-professional-headshot-of-an-african-am.webp"
+  },
+  {
+    "prompt": "A professional headshot of a Middle Eastern man, smartly dressed in business attire, standing in front of an energy company’s facility. The background includes elements like workers and energy infrastructure, providing a sense of a productive and efficient workplace.",
+    "filename": "/generated/image-a-professional-headshot-of-a-middle-east.webp"
   }
 ]

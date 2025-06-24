@@ -17,33 +17,50 @@
 <Testimonials
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Carlos Rodriguez",
+			position: "Director of Operations", 
+			company: "Precision Manufacturing",
 			quote:
-				"This solution transformed our workflow and increased productivity by 35% in just two months.",
+				"Squint paid for itself in three months. We cut training time by 60% and reduced assembly errors by 40%. The ROI was immediate and obvious.",
 			image:
-				"https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+				"/generated/image-a-professional-headshot-of-a-latino-man-.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Keisha Washington",
+			position: "Training Manager",
+			company: "Atlantic Energy Solutions", 
 			quote:
-				"The implementation was seamless and the support team was exceptional throughout the process.",
+				"The setup was surprisingly simple—no special hardware needed. Our technicians were using AR procedures within hours, not weeks.",
 			image:
-				"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+				"/generated/image-a-professional-headshot-of-an-african-am.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Amir Hassan",
+			position: "Safety Director",
+			company: "Gulf Coast Refining",
 			quote:
-				"We've tried multiple solutions, but this is the only one that perfectly addressed all our requirements.",
+				"Every dollar we invested in Squint came back ten-fold through reduced incidents, faster onboarding, and consistent procedures across all our sites.",
 			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&estimonial-3.jpg"
+				"/generated/image-a-professional-headshot-of-a-middle-east.webp"
 		}
 	]}
 />
 
-<CallToAction />
+<CallToAction
+	title="Start upgrading the floor today"
+	subtitle="Turn how-tos into high performance"
+	description="Try Squint and start reducing training time in minutes—not weeks. Don't just capture knowledge—put it to work right where it's needed."
+	imageSrc="/generated/image-a-diverse-group-of-industrial-workers-ea.webp"
+	callsToAction={[
+		{
+			href: "/get-started",
+			label: "Get started",
+			variant: "primary"
+		},
+		{
+			href: "/contact",
+			label: "Talk to sales",
+			variant: "secondary"
+		}
+	]}
+/>

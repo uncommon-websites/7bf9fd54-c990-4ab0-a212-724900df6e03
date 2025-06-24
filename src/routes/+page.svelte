@@ -27,107 +27,135 @@
 />
 
 <Summary
-	generating
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="Squint transforms videos, PDFs, and tribal knowledge into interactive AR work instructions using AI. We help industrial companies standardize procedures, reduce training time, and boost frontline performance. Our platform delivers immersive step-by-step guidance directly where work happens."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Marcus Hendrix",
+			position: "Operations Manager",
+			company: "Apex Automotive",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
+				"Squint cut our new hire training from 6 weeks to 2 weeks. We're saving $180,000 annually just on training costs while our quality scores improved 23%.",
 			image:
-				"https://images.unsplash.com/photo-1571513722275-4b41940f54b8?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				"/generated/image-a-professional-male-operations-manager-w.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Elena Vasquez",
+			position: "Safety Director",
+			company: "Meridian Energy",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
+				"Safety incidents dropped 67% since implementing Squint. The real-time AR guidance prevents costly mistakes before they happen. Our insurance premiums went down $2.3M this year.",
 			image:
-				"https://images.unsplash.com/photo-1600603405959-6d623e92445c?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				"/generated/image-a-professional-female-safety-director-we.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Theo Nakamura",
+			position: "Quality Control Manager",
+			company: "Pacific Foods",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
+				"Production line efficiency increased 31% with Squint's step-by-step procedures. We eliminated 94% of operator errors, saving us roughly $890,000 in waste and rework annually.",
 			image:
-				"https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				"/generated/image-a-professional-male-quality-control-mana.webp"
 		}
 	]}
 />
 
 <Features
-	generating
 	title="Features"
-	subtitle="Some features"
+	subtitle="Transform knowledge into action"
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "AI knowledge transformation",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"Convert videos, PDFs, and spreadsheets into interactive AR procedures instantly."
 		},
 		{
-			title: "Data Analysis",
+			title: "Immersive spatial guidance",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"Pin instructions to real-world locations for hands-free, step-by-step operator guidance."
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Real-time AI assistance",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Operators ask questions and get instant access to relevant procedures and troubleshooting help."
+		},
+		{
+			title: "Performance analytics",
+			description:
+				"Track operator behavior, identify knowledge gaps, and ensure procedure compliance."
+		},
+		{
+			title: "Instant procedure creation",
+			description:
+				"Map any space in under 60 seconds without QR codes or complex hardware."
+		},
+		{
+			title: "Enterprise-grade security",
+			description:
+				"SOC 2 Type II compliant with SSO, MFA, and secure audit trails."
 		}
 	]}
 />
 
 <UseCases
-	generating
 	title="Use Cases"
 	subtitle="Real-world applications for your business needs"
 	useCases={[
 		{
-			title: "Streamlined Workflows",
+			title: "Streamline automotive assembly",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings.",
+				"Transform complex assembly procedures into AR-guided workflows. Cut training time from weeks to days while reducing defects and improving quality scores.",
 			image:
-				"https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+				"/generated/image-a-dynamic-scene-of-automotive-manufactur.webp",
 			link: {
-				href: "/use-cases/workflows",
+				href: "/use-cases/automotive-manufacturing",
 				label: "Learn more"
 			}
 		},
 		{
-			title: "Data Analysis",
+			title: "Standardize food production",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors.",
+				"Convert safety protocols and production procedures into interactive guides. Ensure HACCP compliance while reducing operator errors and improving efficiency.",
 			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2488&q=80",
+				"/generated/image-a-vibrant-image-of-food-production-worke.webp",
 			link: {
-				href: "/use-cases/data-analysis",
-				label: "Explore analytics"
+				href: "/use-cases/food-production",
+				label: "Learn more"
 			}
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Enhance oil and gas operations",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption.",
+				"Turn maintenance manuals and safety procedures into immersive AR instructions. Reduce incidents while ensuring regulatory compliance and operational excellence.",
 			image:
-				"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+				"/generated/image-a-busy-scene-of-oil-and-gas-workers-on-a.webp",
 			link: {
-				href: "/use-cases/collaboration",
-				label: "See security features"
+				href: "/use-cases/oil-and-gas",
+				label: "Learn more"
 			}
 		}
 	]}
 />
 
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+	title="Capture it once. Standardize everywhere."
+	subtitle="Time to act"
+	description="Say goodbye to tribal knowledge that lives and dies in someone's head. With Squint, every factory floor, shift, and new hire gets up to speed—fast."
+	imageSrc="/generated/image-a-cheerful-industrial-worker-wearing-saf.webp"
+	callsToAction={[
+		{
+			href: "/demo",
+			label: "Book your demo",
+			variant: "primary"
+		},
+		{
+			href: "/contact",
+			label: "Talk to sales",
+			variant: "secondary"
+		}
+	]}
+/>

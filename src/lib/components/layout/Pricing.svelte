@@ -35,132 +35,185 @@ Please update features according to the company's product offering. Do not remov
 
 	// Props
 	const {
-		title = "Simple, transparent pricing",
-		subtitle = "Choose the plan that works best for your needs",
-		tierNames = ["Starter", "Pro", "Enterprise"],
+		title = "Transparent pricing for industrial innovation",
+		subtitle = "Scale your workforce training and operations with AI-powered AR solutions",
+		tierNames = ["Professional", "Enterprise", "Scale"],
 		features = [
 			{
-				name: "Projects",
+				name: "Active operators",
 				tiers: {
-					Starter: "5",
-					Pro: "Unlimited",
-					Enterprise: "Unlimited"
+					Professional: "Up to 50",
+					Enterprise: "Up to 500",
+					Scale: "Unlimited"
 				}
 			},
 			{
-				name: "Team members",
+				name: "Procedures per month",
 				tiers: {
-					Starter: "1",
-					Pro: "10",
-					Enterprise: "Unlimited"
+					Professional: "100",
+					Enterprise: "Unlimited",
+					Scale: "Unlimited"
 				}
 			},
 			{
-				name: "Storage",
+				name: "Video-to-procedure AI",
 				tiers: {
-					Starter: "1GB",
-					Pro: "10GB",
-					Enterprise: "Unlimited"
+					Professional: true,
+					Enterprise: true,
+					Scale: true
 				}
 			},
 			{
-				name: "API access",
+				name: "AR spatial navigation",
 				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
+					Professional: true,
+					Enterprise: true,
+					Scale: true
 				}
 			},
 			{
-				name: "Custom domains",
+				name: "Real-time insights & analytics",
 				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
+					Professional: "Basic",
+					Enterprise: "Advanced",
+					Scale: "Advanced + Custom"
 				}
 			},
 			{
-				name: "Analytics",
+				name: "Multi-language translation",
 				tiers: {
-					Starter: "Basic",
-					Pro: "Advanced",
-					Enterprise: "Advanced"
+					Professional: "Major languages",
+					Enterprise: "Major languages",
+					Scale: "Custom languages"
+				}
+			},
+			{
+				name: "API access & integrations",
+				tiers: {
+					Professional: false,
+					Enterprise: true,
+					Scale: true
+				}
+			},
+			{
+				name: "SSO & enterprise login",
+				tiers: {
+					Professional: false,
+					Enterprise: true,
+					Scale: true
+				}
+			},
+			{
+				name: "Location-based reporting",
+				tiers: {
+					Professional: "Basic",
+					Enterprise: "Advanced",
+					Scale: "Advanced"
+				}
+			},
+			{
+				name: "Data export capabilities",
+				tiers: {
+					Professional: "Standard",
+					Enterprise: "Comprehensive",
+					Scale: "Comprehensive"
 				}
 			},
 			{
 				name: "Support response time",
 				tiers: {
-					Starter: "24 hours",
-					Pro: "4 hours",
-					Enterprise: "1 hour"
+					Professional: "24 hours",
+					Enterprise: "4 hours",
+					Scale: "1 hour"
 				}
 			},
 			{
-				name: "Dedicated account manager",
+				name: "Implementation support",
 				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: true
+					Professional: "Self-service",
+					Enterprise: "Guided setup",
+					Scale: "White-glove onboarding"
 				}
 			},
 			{
-				name: "SLA",
+				name: "Dedicated success manager",
 				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: "99.9%"
+					Professional: false,
+					Enterprise: false,
+					Scale: true
+				}
+			},
+			{
+				name: "SOC 2 Type II compliance",
+				tiers: {
+					Professional: true,
+					Enterprise: true,
+					Scale: true
+				}
+			},
+			{
+				name: "SLA uptime guarantee",
+				tiers: {
+					Professional: "99.5%",
+					Enterprise: "99.9%",
+					Scale: "99.95%"
 				}
 			}
 		],
 		tiers = [
 			{
-				name: "Starter",
-				monthlyPrice: 9.99,
-				yearlyPrice: 7.99, // 20% savings
-				description: "Perfect for individuals and small projects",
+				name: "Professional",
+				monthlyPrice: 299,
+				yearlyPrice: 249, // ~17% savings
+				description: "Perfect for small teams getting started with AR procedures",
 				features: [
-					"Up to 5 projects",
-					"Basic analytics",
-					"24-hour support response time",
-					"1GB storage"
+					"Up to 50 active operators",
+					"100 procedures per month",
+					"Video-to-procedure AI conversion",
+					"AR spatial navigation",
+					"Basic analytics and insights",
+					"Multi-language translation",
+					"SOC 2 Type II compliance"
 				],
 				cta: {
-					label: "Get started",
-					href: "/signup?plan=starter"
+					label: "Start free trial",
+					href: "/signup?plan=professional"
 				}
 			},
 			{
-				name: "Pro",
-				monthlyPrice: 29.99,
-				yearlyPrice: 23.99, // 20% savings
-				description: "For growing teams and businesses",
+				name: "Enterprise",
+				monthlyPrice: 999,
+				yearlyPrice: 849, // 15% savings
+				description: "For established operations ready to scale training and procedures",
 				features: [
-					"Unlimited projects",
-					"Advanced analytics",
-					"4-hour support response time",
-					"10GB storage",
-					"Custom domains",
-					"Team collaboration tools"
+					"Up to 500 active operators",
+					"Unlimited procedures",
+					"Advanced analytics & reporting",
+					"API access & integrations",
+					"SSO & enterprise login methods",
+					"Guided implementation support",
+					"Priority support (4hr response)"
 				],
 				cta: {
-					label: "Get started",
-					href: "/signup?plan=pro"
+					label: "Contact sales",
+					href: "/contact"
 				},
 				highlight: true
 			},
 			{
-				name: "Enterprise",
+				name: "Scale",
 				monthlyPrice: null,
 				yearlyPrice: null,
-				description: "For large organizations with specific needs",
+				description: "For large industrial operations with complex requirements",
 				features: [
-					"Everything in Pro",
-					"Dedicated account manager",
-					"1-hour support response time",
-					"Unlimited storage",
-					"Advanced security features",
-					"Custom integrations",
-					"99.9% uptime SLA"
+					"Unlimited operators",
+					"Custom language translation",
+					"Advanced + custom analytics",
+					"White-glove onboarding",
+					"Dedicated success manager",
+					"1-hour priority support",
+					"99.95% uptime SLA",
+					"Custom integrations & workflows"
 				],
 				cta: {
 					label: "Contact sales",
