@@ -11,12 +11,20 @@
 </script>
 
 <Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+	title="Standard work. Everywhere it matters."
+	subtitle="Turn messy knowledge into step-by-step precision."
+	imageSrc="/generated/image-a-skilled-industrial-manufacturing-worke.webp"
+	centered={false}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://logo.clearbit.com/caterpillar.com',
+		'https://logo.clearbit.com/ge.com',
+		'https://logo.clearbit.com/siemens.com',
+		'https://logo.clearbit.com/honeywell.com'
+	]}
+/>
 
 <Summary
 	generating
