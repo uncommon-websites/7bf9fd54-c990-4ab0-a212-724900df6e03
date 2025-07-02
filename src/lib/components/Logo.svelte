@@ -3,7 +3,7 @@
 	const props: HTMLAttributes<SVGSVGElement> = $props();
 </script>
 
-<svg viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg" class="" {...props}>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M44.0354 13.173H0.658203V0H65.4257V64.7675H52.2527V23.5853L11.9021 63.9358L2.58738 54.6211L44.0354 13.173Z" fill="currentColor"/>
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="" {...props}>
+	<rect x="4" y="4" width="11" height="11" rx="2" fill="currentColor" />
+	<rect x="9" y="9.5" width="10" height="10" rx="2" fill="currentColor" fill-opacity="0.24" />
 </svg>
-
