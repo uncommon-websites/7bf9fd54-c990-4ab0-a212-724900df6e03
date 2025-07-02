@@ -109,7 +109,7 @@
 			description:
 				"Transform complex assembly procedures into AR-guided workflows. Cut training time from weeks to days while reducing defects and improving quality scores.",
 			image:
-				"/generated/image-a-dynamic-scene-of-automotive-manufactur.webp",
+				"/generated/image-a-group-of-automotive-assembly-line-work.webp",
 			link: {
 				href: "/use-cases/automotive-manufacturing",
 				label: "Learn more"
