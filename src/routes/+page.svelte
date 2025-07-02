@@ -13,7 +13,7 @@
 <Hero
 	title="Standard work. Everywhere it matters."
 	subtitle="Turn messy knowledge into step-by-step precision."
-	imageSrc="/generated/image-an-industrial-worker-in-a-modern-factory.webp"
+	imageSrc="/generated/image-a-factory-worker-dressed-in-utility-khak.webp"
 	centered={false}
 />
 <LogoScroller
