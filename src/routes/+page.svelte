@@ -40,7 +40,7 @@
 
 <Summary
 	title="What we do"
-	text="Squint transforms videos, PDFs, and tribal knowledge into interactive AR work instructions using AI. We help industrial companies standardize procedures, reduce training time, and boost frontline performance. Our platform delivers immersive step-by-step guidance directly where work happens."
+	text="Squint transforms images, PDFs, and tribal knowledge into interactive AR work instructions using AI. We help industrial companies standardize procedures, reduce training time, and boost frontline performance. Our platform delivers immersive step-by-step guidance directly where work happens."
 />
 
 <Testimonials
