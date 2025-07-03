@@ -8,6 +8,9 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	
+	// Intentional syntax error for testing
+	let testVariable = $state(
 </script>
 
 <Hero
