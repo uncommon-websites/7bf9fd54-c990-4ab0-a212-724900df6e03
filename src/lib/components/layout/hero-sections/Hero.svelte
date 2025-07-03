@@ -63,9 +63,10 @@
 	}: Props = $props();
 </script>
 
-<div class="relative min-h-screen bg-gradient-to-br from-primary-500 via-secondary-400 to-primary-600 overflow-hidden" {...rest}>
-	<!-- Background gradient overlay -->
-	<div class="absolute inset-0 bg-gradient-to-br from-primary-500/90 via-secondary-400/90 to-primary-600/90"></div>
+<div class="relative min-h-screen bg-gray-50 overflow-hidden" {...rest}>
+	<!-- Subtle background pattern -->
+	<div class="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-100"></div>
+	<div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.15) 1px, transparent 0); background-size: 20px 20px;"></div>
 	
 	<div class="relative z-10">
 		<header
@@ -76,7 +77,7 @@
 			data-enter-container
 		>
 			<!-- Left side: Text content -->
-			<div class="grid gap-6 text-white" class:max-w-prose={centered}>
+			<div class="grid gap-6 text-gray-900" class:max-w-prose={centered}>
 				<h1 class="text-display w-full font-bold" data-enter>
 					<span class="block"><AnimateText text={title} /></span>
 				</h1>
@@ -84,7 +85,7 @@
 				<p
 					data-enter
 					class={[
-						"text-headline block max-w-[45ch] text-white/90 transition duration-500 ease-out"
+						"text-headline block max-w-[45ch] text-gray-600 transition duration-500 ease-out"
 					]}
 				>
 					{subtitle}
@@ -96,14 +97,14 @@
 							<Button
 								href={cta.href}
 								size="lg"
-								variant={index % 2 === 0 ? "secondary" : "ghost"}
-								class="max-lg:hidden text-black">{cta.label}</Button
+								variant={index % 2 === 0 ? "primary" : "secondary"}
+								class="max-lg:hidden">{cta.label}</Button
 							>
 							<Button
 								href={cta.href}
 								size="md"
-								variant={index % 2 === 0 ? "secondary" : "ghost"}
-								class="lg:hidden text-black">{cta.label}</Button
+								variant={index % 2 === 0 ? "primary" : "secondary"}
+								class="lg:hidden">{cta.label}</Button
 							>
 						{/each}
 					</div>
