@@ -47,6 +47,10 @@
 		title: string;
 		subtitle: string;
 		imageSrc?: string;
+		announcement?: {
+			text: string;
+			href?: string;
+		};
 		callsToAction?: Array<{
 			href: string;
 			label: string;
