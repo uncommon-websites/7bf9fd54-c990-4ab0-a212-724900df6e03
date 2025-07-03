@@ -13,7 +13,7 @@
 </script>
 
 <Hero
-	title="From knowledge graps to confident shifts."
+	title="From knowledge gaps to confident shifts."
 	subtitle="Squint transforms your tribal knowledge—videos, PDFs, spreadsheets—into step-by-step spatial guidance for frontline operators. Train faster. Work smarter. Capture what matters before it walks out the door."
 	imageSrc="/generated/image-a-group-of-workers-is-engaged-in-a-discu.webp"
 	centered={false}
