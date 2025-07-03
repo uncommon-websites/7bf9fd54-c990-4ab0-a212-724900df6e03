@@ -13,9 +13,9 @@
 </script>
 
 <Hero
-	title="Standard work. Everywhere it matters."
-	subtitle="Turn messy knowledge into step-by-step precision."
-	imageSrc="/generated/image-a-factory-worker-dressed-in-utility-khak.webp"
+	title="Industrial training without the guesswork"
+	subtitle="Squint turns scattered tribal knowledge into spatial work instructions your frontline teams can actually follow — fast."
+	imageSrc="/generated/image-an-industrial-worker-on-a-manufacturing-.webp"
 	centered={false}
 />
 <LogoScroller
