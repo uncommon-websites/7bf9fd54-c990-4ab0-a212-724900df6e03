@@ -1,16 +1,18 @@
-# Fix Compilation Errors
+# Fix Development Server Errors
 
-## Critical Errors to Fix:
-- [ ] Fix UseCase type - Add missing 'cta' property to type definition
-- [ ] Fix use-cases page.ts - Fix undefined 'healthcare' reference
-- [ ] Fix icon imports - Replace ~icons/lucide/* with proper imports
-- [ ] Fix Footer.svelte - Add missing 'target' property to NavItem type
-- [ ] Fix DesktopNavDropdown.svelte - Add type for 'child' parameter
-- [ ] Fix StakeholderGrid.svelte - Add missing 'image' property for join type
-- [ ] Fix layout.svelte - Add missing 'companyName' to meta type
-- [ ] Fix use-cases page.svelte - Fix data type to include all required properties
-- [ ] Fix ScrollText.svelte and Summary.svelte - Fix animation sequence type issues
-- [ ] Fix Card.svelte - Replace deprecated svelte:component syntax
-- [ ] Fix MobileNav.svelte - Fix originalThemeColor type issue
-- [ ] Fix accessibility warnings - Add alt attributes and form labels
+## Critical Errors to Fix
+- [ ] Fix icon import errors (replace ~icons/lucide/* with proper imports)
+- [ ] Fix animation sequence type errors in ScrollText.svelte
+- [ ] Fix animation sequence type errors in Summary.svelte
+- [ ] Fix use case data structure errors in +page.svelte
+- [ ] Fix deprecated svelte:component usage in Card.svelte
+- [ ] Fix missing alt attributes in LogoScroller.svelte
+- [ ] Fix accessibility warnings in kitchen-sink page
+- [ ] Fix vite.config.ts process error (if accessible)
+
+## Warnings to Address
+- [ ] Fix accessibility label warnings
+- [ ] Remove deprecated svelte:component usage
+
+## Final Check
 - [ ] Final design system compliance check - verify design system classes prioritized over Tailwind, NO shadows, NO custom CSS, NO arbitrary values, check theme.css, app.css and typography.css
