@@ -32,6 +32,9 @@
 	// Components
 	import AnimateText from "$lib/components/animation/AnimateText.svelte";
 	import Button from "$lib/components/ui/Button.svelte";
+	
+	// Icons
+	import IconZap from '~icons/lucide/zap';
 
 	// Constants
 	import { cta } from "$lib/navigation";
@@ -82,6 +85,12 @@
 		>
 			<!-- Left side: Text content -->
 			<div class="grid gap-6 text-gray-900" class:max-w-prose={centered}>
+				<div class="flex items-center gap-4 mb-2" data-enter>
+					<div class="flex items-center justify-center w-12 h-12 bg-primary-100 rounded-lg">
+						<IconZap class="w-6 h-6 text-primary-600" />
+					</div>
+					<div class="h-px bg-gradient-to-r from-primary-200 to-transparent flex-1"></div>
+				</div>
 				<h1 class="text-display w-full font-bold" data-enter>
 					<span class="block"><AnimateText text={title} /></span>
 				</h1>
