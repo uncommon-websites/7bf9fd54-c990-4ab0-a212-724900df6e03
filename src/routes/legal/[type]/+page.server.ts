@@ -3,34 +3,38 @@ const legal = {
 		meta: {
 			title: "Privacy Policy",
 			description:
-				"Our privacy policy explains how we collect, use, and protect your personal information."
+				"Learn how Squint collects, uses, and protects your personal information in our AI-powered AR training platform."
 		},
 		content: {
 			lastUpdated: new Date().toISOString(),
 			sections: [
 				{
 					title: "Introduction",
-					body: "We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data when you visit our website and tell you about your privacy rights and how the law protects you."
+					body: "At Squint, we respect your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, and safeguard your information when you use our AI-powered augmented reality training platform and visit our website. We are dedicated to maintaining the highest standards of data protection while delivering innovative industrial training solutions."
 				},
 				{
 					title: "Information We Collect",
-					body: "We may collect, use, store and transfer different kinds of personal data about you including: Identity Data (name, username), Contact Data (email, phone), Technical Data (IP address, browser info), and Usage Data (how you use our website)."
+					body: "We collect information necessary to provide our AR training platform and services, including: Identity information (name, job title, company), Contact details (email, phone number), Technical data (device information, IP address, browser type), Usage data (how you interact with our platform), Training data (progress, completion rates, performance metrics), and Spatial data (when using AR features for training purposes)."
 				},
 				{
 					title: "How We Use Your Information",
-					body: "We will only use your personal data when legally permitted. Most commonly to perform contracts with you, for our legitimate interests, or to comply with legal obligations."
+					body: "We use your personal data to deliver and improve our AI-powered training platform, including: providing personalized AR training experiences, analyzing training effectiveness and progress, improving our AI algorithms and platform features, communicating about your training programs and platform updates, ensuring platform security and preventing unauthorized access, and complying with legal and regulatory requirements in industrial training environments."
 				},
 				{
-					title: "Data Security",
-					body: "We have implemented appropriate security measures to prevent unauthorized access, alteration, disclosure, or destruction of your personal data."
+					title: "Data Security and AR Privacy",
+					body: "We implement enterprise-grade security measures to protect your data, including encryption of data in transit and at rest, secure cloud infrastructure with regular security audits, access controls and authentication protocols, and privacy-by-design principles in our AR technology. Spatial data collected during AR training sessions is processed locally when possible and encrypted when transmitted to our servers."
 				},
 				{
-					title: "Your Legal Rights",
-					body: "You have rights to access, correct, erase, object to processing, restrict processing, and transfer your personal data. Contact us to exercise these rights."
+					title: "Data Sharing and Third Parties",
+					body: "We do not sell your personal data. We may share information with trusted service providers who help us operate our platform, comply with legal obligations, or with your explicit consent. All third-party partners are bound by strict confidentiality agreements and data protection standards that meet or exceed our own requirements."
+				},
+				{
+					title: "Your Rights and Choices",
+					body: "You have comprehensive rights regarding your personal data, including: accessing your personal information and training data, correcting inaccurate or incomplete data, requesting deletion of your data (subject to legal requirements), objecting to certain processing activities, restricting how we process your data, and requesting data portability. You can also control AR data collection settings within our platform."
 				},
 				{
 					title: "Contact Us",
-					body: "If you have questions about this privacy policy, please contact us at privacy@example.com."
+					body: "If you have questions about this privacy policy or how we handle your data, please contact our privacy team at privacy@squint.ai. For general inquiries about our AI-powered AR training platform, you can reach us through our website contact form or support channels."
 				}
 			]
 		}
