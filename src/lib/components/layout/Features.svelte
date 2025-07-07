@@ -55,7 +55,7 @@ Make the feature descriptions one short sentence that clearly articulates the fe
 Usage:
 ```html
 <script>
-  import IconStar from '~icons/lucide/star';
+  import IconStar from 'lucide-svelte/icons/star';
 </script>
 
 <FeatureSection

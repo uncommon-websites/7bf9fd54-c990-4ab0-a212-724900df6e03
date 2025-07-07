@@ -5,8 +5,8 @@
 	// Components
 	import Button from "$lib/components/ui/Button.svelte";
 	// TODO: Replace with proper icon components
-	// import IconMenu from "~icons/lucide/menu";
-	// import IconChevronRight from "~icons/lucide/chevron-right";
+	// import IconMenu from "lucide-svelte/icons/menu";
+	// import IconChevronRight from "lucide-svelte/icons/chevron-right";
 
 	// Utils
 	import { cta, navigation } from "$lib/navigation";
