@@ -361,7 +361,7 @@ export const load: PageLoad = async ({ params }) => {
 	const { usecase } = params;
 
 	if (!usecase || !(usecase in useCases)) {
-		return {};
+		return { meta: { title: "Use Case", description: "Use case not found", image: "", url: "", companyName: "Squint" } };
 	}
 
 	return useCases[usecase as keyof typeof useCases] ?? healthcareUseCase;

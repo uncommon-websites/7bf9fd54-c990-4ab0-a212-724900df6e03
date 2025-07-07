@@ -47,7 +47,7 @@
 					</div>
 				</div>
 			{:else if icon}
-				<icon class={iconClass} />
+				<svelte:component this={icon} class={iconClass} />
 			{:else if imageSrc}
 				<img
 					src={imageSrc}
