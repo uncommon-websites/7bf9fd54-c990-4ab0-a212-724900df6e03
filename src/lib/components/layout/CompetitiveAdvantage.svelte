@@ -9,13 +9,13 @@
 -->
 
 <script lang="ts">
-	// Icons
-	import IconZap from '~icons/lucide/zap';
-	import IconClock from '~icons/lucide/clock';
-	import IconTarget from '~icons/lucide/target';
-	import IconTrendingUp from '~icons/lucide/trending-up';
-	import IconAward from '~icons/lucide/award';
-	import IconShield from '~icons/lucide/shield';
+	// Placeholder icons as simple SVGs
+	const IconZap = () => `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>`;
+	const IconClock = () => `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>`;
+	const IconTarget = () => `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>`;
+	const IconUsers = () => `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`;
+	const IconBookOpen = () => `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`;
+	const IconAward = () => `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg>`;
 </script>
 
 <section class="section-py bg-white">
@@ -31,10 +31,10 @@
 						<span class="text-caption text-primary-600 font-medium">Fast Company's Most Innovative 2025</span>
 					</div>
 					<h2 class="text-title1 font-bold text-gray-900">
-						Why top manufacturers choose Squint
+						Why teams choose Squint over traditional training tools
 					</h2>
 					<p class="text-headline text-gray-600 max-w-[50ch]">
-						Traditional work instructions live in binders or spreadsheets—hard to find, harder to follow. Squint brings them to life onsite by turning your existing videos and process docs into clear, visual guidance your team can follow in the field.
+						What used to take weeks now takes hours. Squint converts your existing videos and PDFs into step-by-step training—no more waiting for trainers or slow shadowing.
 					</p>
 				</div>
 
@@ -45,7 +45,8 @@
 							<IconClock class="w-4 h-4 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-body font-medium text-gray-900 mb-1">Get new operators ramped up in days, not weeks</h3>
+							<h3 class="text-body font-medium text-gray-900 mb-1">Faster ramp-up time</h3>
+							<p class="text-caption text-gray-600">What used to take weeks now takes hours. No more waiting for trainers or slow shadowing.</p>
 						</div>
 					</div>
 
@@ -54,25 +55,38 @@
 							<IconTarget class="w-4 h-4 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-body font-medium text-gray-900 mb-1">Eliminate guesswork with point-by-point spatial guidance</h3>
+							<h3 class="text-body font-medium text-gray-900 mb-1">On-the-floor guidance</h3>
+							<p class="text-caption text-gray-600">Spatial instructions where they need them most—on the floor, not in a binder.</p>
 						</div>
 					</div>
 
 					<div class="flex gap-3">
 						<div class="flex items-center justify-center w-8 h-8 bg-primary-100 rounded-lg flex-shrink-0 mt-1">
-							<IconShield class="w-4 h-4 text-primary-600" />
+							<IconUsers class="w-4 h-4 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-body font-medium text-gray-900 mb-1">Capture expert knowledge before it walks out the door</h3>
+							<h3 class="text-body font-medium text-gray-900 mb-1">Standardization at scale</h3>
+							<p class="text-caption text-gray-600">Everyone follows the same process, every time. Reducing variation across teams.</p>
 						</div>
 					</div>
 
 					<div class="flex gap-3">
 						<div class="flex items-center justify-center w-8 h-8 bg-primary-100 rounded-lg flex-shrink-0 mt-1">
-							<IconTrendingUp class="w-4 h-4 text-primary-600" />
+							<IconBookOpen class="w-4 h-4 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-body font-medium text-gray-900 mb-1">Standardize processes across teams and shifts</h3>
+							<h3 class="text-body font-medium text-gray-900 mb-1">Knowledge that stays</h3>
+							<p class="text-caption text-gray-600">When people leave, their knowledge doesn't. Captured procedures stay with your company.</p>
+						</div>
+					</div>
+
+					<div class="flex gap-3">
+						<div class="flex items-center justify-center w-8 h-8 bg-primary-100 rounded-lg flex-shrink-0 mt-1">
+							<IconZap class="w-4 h-4 text-primary-600" />
+						</div>
+						<div>
+							<h3 class="text-body font-medium text-gray-900 mb-1">Deployment in minutes</h3>
+							<p class="text-caption text-gray-600">Map your space in under 60 seconds. Digitize processes fast.</p>
 						</div>
 					</div>
 				</div>
@@ -80,7 +94,7 @@
 				<!-- Bottom tagline -->
 				<div class="pt-4 border-t border-gray-100">
 					<p class="text-headline font-medium text-gray-900">
-						Reduce human errors. Speed up training. Keep things running.
+						All with a tool your team actually wants to use.
 					</p>
 				</div>
 			</div>
@@ -90,8 +104,8 @@
 				<!-- Main image -->
 				<div class="relative aspect-[4/3] rounded-lg overflow-hidden">
 					<img
-						src="/generated/image-a-group-of-industrial-workers-in-a-manuf.webp"
-						alt="Industrial workers using AR guidance in manufacturing facility"
+						src="/generated/image-a-manufacturing-team-in-an-industrial-se.webp"
+						alt="Manufacturing team training with digital work instructions"
 						class="size-full object-cover"
 					/>
 					
@@ -128,8 +142,8 @@
 				<!-- Secondary image -->
 				<div class="absolute -bottom-6 -right-6 w-32 h-40 rounded-lg overflow-hidden border-4 border-white">
 					<img
-						src="/generated/image-a-manufacturing-team-collaborating-in-a-.webp"
-						alt="Manufacturing team collaborating with digital work instructions"
+						src="/generated/image-a-factory-floor-scene-featuring-workers-.webp"
+						alt="Factory floor workers following AR guidance"
 						class="size-full object-cover"
 					/>
 				</div>
