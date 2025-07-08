@@ -1,7 +1,10 @@
 <script lang="ts">
 	// Components
 	import { NavigationMenu } from "bits-ui";
-	import IconChevronDown from "~icons/lucide/chevron-down";
+	// Icon component
+	function IconChevronDown(props: any) {
+		return `<svg class="${props.class || 'size-3'}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>`;
+	}
 
 	// Props
 	const { item } = $props();
@@ -17,10 +20,8 @@
 
 <NavigationMenu.Trigger class="group/item inline-flex h-full items-center gap-1">
 	{item.label}
-	<IconChevronDown
-		class="relative top-[1px] size-3 opacity-80 transition duration-200 ease-out group-hover/item:opacity-100 group-data-[state=open]:rotate-180 "
-		aria-hidden="true"
-	/>
+	{@html IconChevronDown({class: "relative top-[1px] size-3 opacity-80 transition duration-200 ease-out group-hover/item:opacity-100 group-data-[state=open]:rotate-180"})}
+	<span aria-hidden="true" class="sr-only">Toggle menu</span>
 </NavigationMenu.Trigger>
 
 <NavigationMenu.Content
