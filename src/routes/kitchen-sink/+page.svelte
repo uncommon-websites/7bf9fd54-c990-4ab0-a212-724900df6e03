@@ -51,8 +51,9 @@
 
 				<!-- Radius Control -->
 				<div class="space-y-2">
-					<label class="text-sm font-medium">Border Radius: {themeRadius}px</label>
+					<label for="radius-control" class="text-sm font-medium">Border Radius: {themeRadius}px</label>
 					<input
+						id="radius-control"
 						type="range"
 						min="0"
 						max="24"
@@ -63,8 +64,9 @@
 
 				<!-- Primary Color Hue -->
 				<div class="space-y-2">
-					<label class="text-sm font-medium">Primary Hue: {primaryHue}°</label>
+					<label for="hue-control" class="text-sm font-medium">Primary Hue: {primaryHue}°</label>
 					<input
+						id="hue-control"
 						type="range"
 						min="0"
 						max="360"
