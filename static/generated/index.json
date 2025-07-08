@@ -122,5 +122,17 @@
   {
     "prompt": "A group of workers is engaged in a discussion on the manufacturing floor. The environment is naturally lit, with a mix of warm and cool tones. Overhead fluorescent lights and diffused daylight create a realistic industrial setting. The workers are wearing utility khaki uniforms, and their skin tones are varied and realistic, showing signs of hard work like sweaty forearms and dirt under nails. The factory floor is expansive, with machines and racks of parts providing depth. Surfaces show wear, such as brushed steel and oiled concrete. The workers are captured mid-action, one adjusting a valve while another points down a corridor. The composition is clear with a slightly wide lens, maintaining focus on the workers while still providing context of the environment. The mood is intense and controlled, with a sense of focus and purpose as they collaborate.",
     "filename": "/generated/image-a-group-of-workers-is-engaged-in-a-discu.webp"
+  },
+  {
+    "prompt": "A group of industrial workers in a manufacturing facility, engaged in hands-on tasks. They are focusing on their work, with an environment showing signs of use like brushed steel surfaces and wooden pallets. The lighting is a mix of overhead fluorescents and diffused daylight, creating a realistic interplay of warm and cool tones. The workers have varied skin tones, showing natural features like sweaty forearms and dirt under nails. The scene is captured in an editorial documentary style, with a slightly wide lens to include the factory's context, such as looming machines and racks of parts.",
+    "filename": "/generated/image-a-group-of-industrial-workers-in-a-manuf.webp"
+  },
+  {
+    "prompt": "A manufacturing team collaborating in a factory setting, surrounded by machinery and equipment. They are actively engaged in a discussion, referencing equipment and pointing at different areas. The scene is naturally lit with a balance of warm and cool tones, featuring industrial grays, dusty blues, and hints of utility khaki. The environment shows honest wear with oiled concrete floors and painted pipes. The mood is focused and intense, capturing candid moments of interaction without any posed expressions. The composition maintains clarity, with the team grounded in their tasks and the factory floor providing depth.",
+    "filename": "/generated/image-a-manufacturing-team-collaborating-in-a-.webp"
+  },
+  {
+    "prompt": "A factory floor bustling with workers who are focused on their tasks. They are following step-by-step procedures, with some adjusting valves and others pressing buttons. The environment has a mix of overhead fluorescent lighting and daylight from windows, creating a warm vs cool interplay. The scene includes surfaces like brushed steel and wooden pallets, with neutral industrial grays and subtle color highlights. The workers' skin tones are varied, with visible pores and dirt under nails, adding authenticity. The photo is taken in an editorial documentary style, capturing real-time action and the spatial awareness of the factory environment.",
+    "filename": "/generated/image-a-factory-floor-bustling-with-workers-wh.webp"
   }
 ]

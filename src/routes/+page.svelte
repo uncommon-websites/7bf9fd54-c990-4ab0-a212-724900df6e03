@@ -8,6 +8,7 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CompetitiveAdvantage from "$lib/components/layout/CompetitiveAdvantage.svelte";
 	
 	// Test variable removed - syntax error fixed
 </script>
@@ -28,6 +29,9 @@
 		}
 	]}
 />
+
+<CompetitiveAdvantage />
+
 <LogoScroller
 	label="Trusted by industry leaders"
 	logoUrls={[
