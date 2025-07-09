@@ -23,8 +23,7 @@ A minimalist teaser for the about page.
 	const teamMember: TeamMember = {
 		name: "Devin Bhushan",
 		role: "Founder & CEO",
-		image:
-			"/generated/image-professional-headshot-of-a-ceo-in-an-ind.webp"
+		image: "/uploaded/1752074896763-jgaidb7.jpeg"
 	};
 </script>
 
