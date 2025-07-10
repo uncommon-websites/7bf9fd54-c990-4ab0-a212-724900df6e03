@@ -14,7 +14,7 @@
 </script>
 
 <Hero
-	title="Training that stays—long after your best workers leave"
+	title="Training that stays, long after your best workers leave"
 	subtitle="Squint turns tribal knowledge into step-by-step AI procedures, overlaid right where the work happens. So training gets faster, execution stays consistent, and your operations don't miss a beat."
 	imageSrc="/generated/image-a-group-of-workers-is-engaged-in-a-discu.webp"
 	centered={false}
