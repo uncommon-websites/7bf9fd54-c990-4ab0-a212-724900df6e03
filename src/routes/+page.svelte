@@ -14,8 +14,8 @@
 </script>
 
 <Hero
-	title="From disconnected processes to on-the-floor clarity."
-	subtitle="Squint transforms your tribal knowledge—videos, PDFs, spreadsheets—into step-by-step spatial guidance for frontline operators. Train faster. Work smarter. Capture what matters before it walks out the door."
+	title="Training that stays—long after your best workers leave"
+	subtitle="Squint turns tribal knowledge into step-by-step AI procedures, overlaid right where the work happens. So training gets faster, execution stays consistent, and your operations don't miss a beat."
 	imageSrc="/generated/image-a-group-of-workers-is-engaged-in-a-discu.webp"
 	centered={false}
 	callsToAction={[
