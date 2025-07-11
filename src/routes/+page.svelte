@@ -11,8 +11,8 @@
 </script>
 
 <Hero
-	title="Your expert's brain on every shift"
-	subtitle="Turn scattered videos, spreadsheets, and PDFs into clear, standardized procedures your whole team can follow. Squint transforms tribal knowledge into structured, interactive instructions—so work stays consistent, even when your experts aren't there."
+	title="Expert knowledge. Where work happens."
+	subtitle="Squint turns tribal knowledge into spatial work instructions—right on the factory floor. Train new operators 40% faster and keep your lines running smoothly, even as experienced workers retire."
 	imageSrc="/generated/image-a-factory-worker-in-a-modern-industrial-.webp"
 	centered={false}
 />
