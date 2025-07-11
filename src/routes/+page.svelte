@@ -11,8 +11,8 @@
 </script>
 
 <Hero
-	title="Standard work. Everywhere it matters."
-	subtitle="Turn messy knowledge into step-by-step precision."
+	title="Your expert's brain on every shift"
+	subtitle="Turn scattered videos, spreadsheets, and PDFs into clear, standardized procedures your whole team can follow. Squint transforms tribal knowledge into structured, interactive instructions—so work stays consistent, even when your experts aren't there."
 	imageSrc="/generated/image-a-factory-worker-in-a-modern-industrial-.webp"
 	centered={false}
 />
