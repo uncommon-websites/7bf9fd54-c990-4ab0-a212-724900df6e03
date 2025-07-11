@@ -28,13 +28,8 @@ Please update features according to the company's product offering. Do not remov
 	// Components
 	import Button from "$lib/components/ui/Button.svelte";
 	import SectionHeader from "./SectionHeader.svelte";
-	// Icon components
-	function IconCheck(props: any) {
-		return `<svg class="${props.class || 'size-5'}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>`;
-	}
-	function IconX(props: any) {
-		return `<svg class="${props.class || 'size-5'}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>`;
-	}
+	import IconCheck from "~icons/lucide/check";
+	import IconX from "~icons/lucide/x";
 	import NumberFlow from "@number-flow/svelte";
 	import LogoScroller from "./LogoScroller.svelte";
 
@@ -297,7 +292,7 @@ Please update features according to the company's product offering. Do not remov
 					<ul class="space-y-3">
 						{#each tier.features as feature}
 							<li class="flex items-center gap-2">
-								{@html IconCheck({class: "text-primary-600 dark:text-primary-400 size-5 flex-shrink-0"})}
+								<IconCheck class="text-primary-600 dark:text-primary-400 size-5 flex-shrink-0" />
 								<span class="text-body text-emphasis-medium dark:text-gray-300">{feature}</span>
 							</li>
 						{/each}

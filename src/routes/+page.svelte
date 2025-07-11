@@ -8,30 +8,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
-	import CompetitiveAdvantage from "$lib/components/layout/CompetitiveAdvantage.svelte";
-	
-	// Test variable removed - syntax error fixed
 </script>
 
 <Hero
-	title="Training that stays, long after your best workers leave"
-	subtitle="Squint turns tribal knowledge into step-by-step AI procedures, overlaid right where the work happens. So training gets faster, execution stays consistent, and your operations don't miss a beat."
-	imageSrc="/generated/image-a-group-of-workers-is-engaged-in-a-discu.webp"
+	title="Standard work. Everywhere it matters."
+	subtitle="Turn messy knowledge into step-by-step precision."
+	imageSrc="/generated/image-a-factory-worker-in-a-modern-industrial-.webp"
 	centered={false}
-	callsToAction={[
-		{
-			href: "/demo",
-			label: "See how it works"
-		},
-		{
-			href: "/contact",
-			label: "Talk to sales"
-		}
-	]}
 />
-
-<CompetitiveAdvantage />
-
 <LogoScroller
 	label="Trusted by industry leaders"
 	logoUrls={[
@@ -44,7 +28,7 @@
 
 <Summary
 	title="What we do"
-	text="Squint transforms images, PDFs, and tribal knowledge into interactive AR work instructions using AI. We help industrial companies standardize procedures, reduce training time, and boost frontline performance. Our platform delivers immersive step-by-step guidance directly where work happens."
+	text="Squint transforms videos, PDFs, and tribal knowledge into interactive AR work instructions using AI. We help industrial companies standardize procedures, reduce training time, and boost frontline performance. Our platform delivers immersive step-by-step guidance directly where work happens."
 />
 
 <Testimonials
@@ -125,7 +109,7 @@
 			description:
 				"Transform complex assembly procedures into AR-guided workflows. Cut training time from weeks to days while reducing defects and improving quality scores.",
 			image:
-				"/generated/image-a-group-of-automotive-assembly-line-work.webp",
+				"/generated/image-a-dynamic-scene-of-automotive-manufactur.webp",
 			link: {
 				href: "/use-cases/automotive-manufacturing",
 				label: "Learn more"

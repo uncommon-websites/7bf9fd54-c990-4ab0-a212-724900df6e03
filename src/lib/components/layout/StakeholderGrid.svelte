@@ -129,7 +129,6 @@
 					{
 						name: "You?",
 						position: "Join us",
-						image: "",
 						type: "join"
 					},
 					stakeholders.length

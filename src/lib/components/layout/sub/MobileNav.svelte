@@ -4,9 +4,8 @@
 
 	// Components
 	import Button from "$lib/components/ui/Button.svelte";
-	// TODO: Replace with proper icon components
-	// import IconMenu from "lucide-svelte/icons/menu";
-	// import IconChevronRight from "lucide-svelte/icons/chevron-right";
+	import IconMenu from "~icons/lucide/menu";
+	import IconChevronRight from "~icons/lucide/chevron-right";
 
 	// Utils
 	import { cta, navigation } from "$lib/navigation";
@@ -19,7 +18,7 @@
 	let isMenuOpen = $state(false);
 	let scrollBarWidth: number = $state(0);
 	let themeColor: string = $state("");
-	let originalThemeColor: string | null | undefined = $state(null);
+	let originalThemeColor: string | null = $state(null);
 
 	$effect(() => {
 		scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
@@ -125,7 +124,7 @@
 		size="lg"
 		variant="ghost"
 		hideLabel
-		suffix={undefined}
+		suffix={IconMenu}
 		iconOnly
 		class="z-50 max-h-full"
 		onclick={() => (isMenuOpen = !isMenuOpen)}>Menu</Button
@@ -138,7 +137,7 @@
 			<summary
 				class="section-px nav-item text-title2 text-foreground hover:bg-muted flex cursor-pointer list-none items-center justify-between transition-all select-none group-open:font-medium"
 				>{item.label}
-				<span class="transition duration-300 ease-out group-open:rotate-90">▶</span></summary
+				<IconChevronRight class="transition duration-300 ease-out group-open:rotate-90" /></summary
 			>
 
 			<ul

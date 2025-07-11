@@ -51,9 +51,8 @@
 
 				<!-- Radius Control -->
 				<div class="space-y-2">
-					<label for="radius-control" class="text-sm font-medium">Border Radius: {themeRadius}px</label>
+					<label class="text-sm font-medium">Border Radius: {themeRadius}px</label>
 					<input
-						id="radius-control"
 						type="range"
 						min="0"
 						max="24"
@@ -64,9 +63,8 @@
 
 				<!-- Primary Color Hue -->
 				<div class="space-y-2">
-					<label for="hue-control" class="text-sm font-medium">Primary Hue: {primaryHue}°</label>
+					<label class="text-sm font-medium">Primary Hue: {primaryHue}°</label>
 					<input
-						id="hue-control"
 						type="range"
 						min="0"
 						max="360"
@@ -77,9 +75,8 @@
 
 				<!-- Background Shade -->
 				<div class="space-y-2">
-					<label for="background-control" class="text-sm font-medium">Background: Gray-{backgroundShade}</label>
+					<label class="text-sm font-medium">Background: Gray-{backgroundShade}</label>
 					<select
-						id="background-control"
 						bind:value={backgroundShade}
 						class="border-border bg-background text-foreground w-full rounded border p-2"
 					>
