@@ -98,13 +98,13 @@
 					<Button
 						href={cta.href}
 						size="lg"
-						variant={index % 2 === 0 ? "primary" : "secondary"}
+						variant={index % 2 === 0 ? "glass" : "secondary"}
 						class="max-lg:hidden">{cta.label}</Button
 					>
 					<Button
 						href={cta.href}
 						size="md"
-						variant={index % 2 === 0 ? "primary" : "secondary"}
+						variant={index % 2 === 0 ? "glass" : "secondary"}
 						class="lg:hidden">{cta.label}</Button
 					>
 				{/each}

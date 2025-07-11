@@ -199,6 +199,23 @@
 			}
 		}
 
+		&[data-variant="glass"] {
+			background-color: color-mix(in oklch, var(--color-primary-500), transparent 80%);
+			color: var(--color-primary-foreground);
+			border: 1px solid color-mix(in oklch, var(--color-primary-400), transparent 60%);
+			backdrop-filter: blur(8px);
+
+			&:hover {
+				background-color: color-mix(in oklch, var(--color-primary-500), transparent 70%);
+				border-color: color-mix(in oklch, var(--color-primary-400), transparent 50%);
+			}
+
+			&:active {
+				background-color: color-mix(in oklch, var(--color-primary-500), transparent 60%);
+				border-color: color-mix(in oklch, var(--color-primary-400), transparent 40%);
+			}
+		}
+
 		&[data-variant="link"] {
 			background-color: transparent;
 			color: var(--color-primary);
