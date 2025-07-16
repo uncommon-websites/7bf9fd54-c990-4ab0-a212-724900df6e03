@@ -11,8 +11,8 @@
 </script>
 
 <Hero
-	title="Expert knowledge. Where work happens."
-	subtitle="Squint turns tribal knowledge into spatial work instructions—right on the factory floor. Train new operators 40% faster and keep your lines running smoothly, even as experienced workers retire."
+	title="Make every operator an expert"
+	subtitle="Squint turns expert videos into interactive, spatial instructions—so your team can learn faster, reduce errors, and stay compliant without the paperwork."
 	imageSrc="/generated/image-a-factory-worker-in-a-modern-industrial-.webp"
 	centered={false}
 />
