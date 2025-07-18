@@ -8,6 +8,7 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import ImpactShowcase from "$lib/components/layout/ImpactShowcase.svelte";
 </script>
 
 <Hero
@@ -16,6 +17,9 @@
 	imageSrc="/generated/image-a-factory-worker-in-a-modern-industrial-.webp"
 	centered={false}
 />
+
+<ImpactShowcase />
+
 <LogoScroller
 	label="Trusted by industry leaders"
 	logoUrls={[
