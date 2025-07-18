@@ -1,11 +1,10 @@
-# Task: Create Fun Section Below Hero
+# Task: Update Hero Section to Fit Style Guide
 
-- [x] Create new ImpactShowcase component with cinematic design
-- [x] Add animated counters for key metrics
-- [x] Use orange accent color strategically for highlights
-- [x] Incorporate bold typography following style guide
-- [x] Add subtle animations and interactions
-- [x] Generate appropriate industrial/manufacturing imagery
-- [x] Import and place component between Hero and LogoScroller
-- [x] Test responsive design and animations
+- [x] Update Hero component background to dark/black for high contrast
+- [x] Enhance typography to be more bold and impactful (following style guide font weights)
+- [x] Update CTA buttons to use orange accent color (#FF5500)
+- [x] Improve layout spacing using 8px base grid system
+- [x] Add cinematic visual elements and proper contrast
+- [x] Ensure brand personality (empowering, confident, forward-thinking) is reflected
+- [x] Test responsive behavior with new styling
 - [x] Final design system compliance check - verify design system classes prioritized over Tailwind, NO shadows, NO custom CSS, NO arbitrary values, check theme.css, app.css and typography.css
