@@ -13,7 +13,7 @@
 
 <Hero
 	title="Make every operator a dang expert"
-	subtitle="Squint turns expert videos into interactive, spatial instructions—so your team can learn faster, reduce errors, and stay compliant without the paperwork."
+	subtitle="Squint turns expert videos into interactive, spatial instructions—so your team can learn faster, reeduce errors, and stay compliant without the paperwork."
 	imageSrc="/generated/image-a-factory-worker-in-a-modern-industrial-.webp"
 	centered={false}
 	callsToAction={[
