@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
 @import "./base.css";
 @import "./typography.css";
@@ -18,17 +18,17 @@
 --color-gray-800: oklch(0.269 0 0);
 --color-gray-900: oklch(0.205 0 0);
 --color-gray-950: oklch(0.145 0 0);
---color-primary-50: oklch(0.985 0 0);
---color-primary-100: oklch(0.97 0 0);
---color-primary-200: oklch(0.922 0 0);
---color-primary-300: oklch(0.87 0 0);
---color-primary-400: oklch(0.708 0 0);
---color-primary-500: oklch(0.556 0 0);
---color-primary-600: oklch(0.439 0 0);
---color-primary-700: oklch(0.371 0 0);
---color-primary-800: oklch(0.269 0 0);
---color-primary-900: oklch(0.205 0 0);
---color-primary-950: oklch(0.145 0 0);
+--color-primary-50: oklch(0.971 0.013 17.38);
+--color-primary-100: oklch(0.936 0.032 17.717);
+--color-primary-200: oklch(0.885 0.062 18.334);
+--color-primary-300: oklch(0.808 0.114 19.571);
+--color-primary-400: oklch(0.704 0.191 22.216);
+--color-primary-500: oklch(0.637 0.237 25.331);
+--color-primary-600: oklch(0.577 0.245 27.325);
+--color-primary-700: oklch(0.505 0.213 27.518);
+--color-primary-800: oklch(0.444 0.177 26.899);
+--color-primary-900: oklch(0.396 0.141 25.723);
+--color-primary-950: oklch(0.258 0.092 26.042);
 --color-secondary-50: oklch(0.98 0.016 73.684);
 --color-secondary-100: oklch(0.954 0.038 75.164);
 --color-secondary-200: oklch(0.901 0.076 70.697);
@@ -42,7 +42,7 @@
 --color-secondary-950: oklch(0.266 0.079 36.259);
 
 /* Typography */
---font-family: "Inter";
+--font-family: "Figtree";
 --font-fallback: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 --font-body: var(--font-family), var(--font-fallback);
 --font-display: var(--font-body);
