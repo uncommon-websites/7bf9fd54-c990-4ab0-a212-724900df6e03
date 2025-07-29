@@ -65,18 +65,20 @@
 </script>
 
 <div
-	class="section-my section-px relative container mx-auto flex flex-col items-start gap-8 text-pretty lg:grid xl:flex-row"
+	class={[
+		"section-py section-px relative container mx-auto flex flex-col items-start gap-8 text-pretty",
+		title ? "lg:grid lg:grid-cols-[1fr_2fr] xl:flex-row" : ""
+	]}
 	bind:this={containerElement}
-	class:lg:grid-cols-[1fr_2fr]={!!title}
 	{...rest}
 >
 	{#if title}
-		<p class="text-emphasis-dim word">{title}</p>
+		<p class="text-callout word" style="color: var(--color-emphasis-dim)">{title}</p>
 	{/if}
 
-	<div class="text-title1 container-sm gap relative mx-auto grid">
+	<div class="text-title1 container-sm relative mx-auto">
 		{#each segments as paragraph, i}
-			<p class="mb-[1.5em] last:mb-0">
+			<p class="mb-6 last:mb-0" style="color: var(--color-emphasis-high)">
 				{#each paragraph.split(" ").filter(Boolean) as word}
 					<span class="word relative inline-block transition duration-150 ease-out">{word}</span
 					>{" "}
