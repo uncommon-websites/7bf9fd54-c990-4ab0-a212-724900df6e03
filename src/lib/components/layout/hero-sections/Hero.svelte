@@ -63,43 +63,29 @@
 	}: Props = $props();
 </script>
 
-<div class="relative bg-black text-white overflow-hidden" {...rest}>
-	<!-- Background Image with Overlay -->
-	{#if imageSrc}
-		<div class="absolute inset-0 z-0">
-			<img
-				src={imageSrc}
-				alt="Background"
-				class="size-full object-cover opacity-40"
-				onerror={handleImageError}
-			/>
-			<div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
-		</div>
-	{/if}
-
+<div class="bg-background" {...rest}>
 	<header
 		class={[
-			"relative z-10 section-px container mx-auto grid items-center gap-16 gap-y-12 py-24 pt-32 pb-32 text-balance min-h-[80vh]",
-			centered ? "place-items-center text-center" : "xl:grid-cols-[1fr_auto]"
+			"section-px container mx-auto grid items-end gap-16 gap-y-9 py-12 pt-24 text-balance",
+			centered ? "place-items-center text-center" : " xl:grid-cols-[1fr_auto]"
 		]}
 		data-enter-container
 	>
-		<div class="grid gap-8" class:max-w-4xl={centered}>
-			<h1 class="text-white font-bold tracking-tight" data-enter>
-				<span class="block text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[0.9] mb-4">
-					<AnimateText text={title} />
-				</span>
+		<div class="grid gap-6" class:max-w-prose={centered}>
+			<h1 class="text-display w-full" data-enter>
+				<span class="block"><AnimateText text={title} /></span>
 				{#if !centered}
-					<span class="block text-xl md:text-2xl lg:text-3xl font-normal text-gray-200 leading-relaxed max-w-3xl">
-						<AnimateText text={subtitle} />
-					</span>
+					<span class="text-emphasis-dim block"><AnimateText text={subtitle} /></span>
 				{/if}
 			</h1>
 
 			{#if centered}
 				<p
 					data-enter
-					class="text-gray-200 text-xl md:text-2xl lg:text-3xl font-normal leading-relaxed mx-auto block max-w-4xl transition duration-500 ease-out"
+					class={[
+						"text-muted-foreground text-headline mx-auto block max-w-[45ch] transition duration-500 ease-out"
+						// isTitleComplete ? "opacity-100" : "translate-y-2 opacity-0 blur-sm"
+					]}
 				>
 					{subtitle}
 				</p>
@@ -107,36 +93,33 @@
 		</div>
 
 		{#if callsToAction.length > 0}
-			<div class="flex flex-col sm:flex-row gap-6" data-enter>
+			<div class="flex gap-4" data-enter>
 				{#each callsToAction as cta, index}
 					<Button
 						href={cta.href}
 						size="lg"
-						variant={index % 2 === 0 ? "default" : "secondary"}
-						class={[
-							"px-8 py-4 text-lg font-semibold transition-all duration-200 max-lg:hidden",
-							index % 2 === 0 
-								? "bg-[#FF5500] hover:bg-[#FF784D] text-white border-0" 
-								: "bg-white hover:bg-gray-100 text-black border-2 border-white"
-						]}
+						variant={index % 2 === 0 ? "primary" : "secondary"}
+						class="max-lg:hidden">{cta.label}</Button
 					>
-						{cta.label}
-					</Button>
 					<Button
 						href={cta.href}
 						size="md"
-						variant={index % 2 === 0 ? "default" : "secondary"}
-						class={[
-							"px-6 py-3 text-base font-semibold transition-all duration-200 lg:hidden",
-							index % 2 === 0 
-								? "bg-[#FF5500] hover:bg-[#FF784D] text-white border-0" 
-								: "bg-white hover:bg-gray-100 text-black border-2 border-white"
-						]}
+						variant={index % 2 === 0 ? "primary" : "secondary"}
+						class="lg:hidden">{cta.label}</Button
 					>
-						{cta.label}
-					</Button>
 				{/each}
 			</div>
 		{/if}
 	</header>
+
+	{#if imageSrc}
+		<div class="col-span-full aspect-video" data-enter>
+			<img
+				src={imageSrc}
+				alt="Customer"
+				class="size-full object-cover"
+				onerror={handleImageError}
+			/>
+		</div>
+	{/if}
 </div>

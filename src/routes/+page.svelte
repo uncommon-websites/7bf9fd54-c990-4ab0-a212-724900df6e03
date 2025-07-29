@@ -8,28 +8,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
-	import ImpactShowcase from "$lib/components/layout/ImpactShowcase.svelte";
 </script>
 
 <Hero
-	title="Make every operator a dang expert"
-	subtitle="Squint turns expert videos into interactive, spatial instructions—so your team can learn faster, reduce errors, and stay compliant without the paperwork."
+	title="Standard work. Everywhere it matters."
+	subtitle="Turn messy knowledge into step-by-step precision."
 	imageSrc="/generated/image-a-factory-worker-in-a-modern-industrial-.webp"
 	centered={false}
-	callsToAction={[
-		{
-			href: "/demo",
-			label: "Book your demo"
-		},
-		{
-			href: "/contact",
-			label: "Talk to sales"
-		}
-	]}
 />
-
-<ImpactShowcase />
-
 <LogoScroller
 	label="Trusted by industry leaders"
 	logoUrls={[
