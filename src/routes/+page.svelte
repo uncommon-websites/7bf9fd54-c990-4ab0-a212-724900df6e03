@@ -7,14 +7,24 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import FancyHero from "$lib/components/layout/hero-sections/FancyHero.svelte";
 </script>
 
-<Hero
+<FancyHero
 	title="Standard work. Everywhere it matters."
 	subtitle="Turn messy knowledge into step-by-step precision."
 	imageSrc="/generated/image-a-factory-worker-in-a-modern-industrial-.webp"
 	centered={false}
+	callsToAction={[
+		{
+			href: "/demo",
+			label: "Book your demo"
+		},
+		{
+			href: "/contact",
+			label: "Talk to sales"
+		}
+	]}
 />
 <LogoScroller
 	label="Trusted by industry leaders"
