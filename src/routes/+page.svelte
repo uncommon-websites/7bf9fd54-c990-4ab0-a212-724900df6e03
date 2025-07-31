@@ -11,9 +11,13 @@
 </script>
 
 <FancyHero
-	title="Standard work. Everywhere it matters."
-	subtitle="Turn messy knowledge into step-by-step precision."
-	imageSrc="/generated/image-a-factory-worker-in-a-modern-industrial-.webp"
+	title="The fastest way to turn tribal knowledge into ROI"
+	subtitle="Squint captures your team's undocumented processes and turns them into searchable instructions—instantly. So when someone leaves, the knowledge stays, and production keeps moving."
+	imageSrc="/generated/image-a-luxury-executive-boardroom-with-premiu.webp"
+	secondaryImages={[
+		"/generated/image-a-sophisticated-industrial-workspace-fea.webp",
+		"/generated/image-a-premium-manufacturing-facility-with-hi.webp"
+	]}
 	centered={false}
 	callsToAction={[
 		{

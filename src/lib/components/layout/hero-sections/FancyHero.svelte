@@ -50,6 +50,7 @@
 		title: string;
 		subtitle: string;
 		imageSrc?: string;
+		secondaryImages?: string[];
 		callsToAction?: Array<{
 			href: string;
 			label: string;
@@ -60,6 +61,7 @@
 		title,
 		subtitle,
 		imageSrc,
+		secondaryImages = [],
 		callsToAction = [cta],
 		centered = false,
 		...rest
@@ -68,6 +70,10 @@
 	// State for animations
 	let isVisible = $state(false);
 	let mousePosition = $state({ x: 0, y: 0 });
+	let currentImageIndex = $state(0);
+	
+	// All images for cycling
+	let allImages = $derived([imageSrc, ...secondaryImages].filter(Boolean));
 
 	// Floating elements data
 	const floatingElements = [
@@ -93,6 +99,17 @@
 		}, 100);
 		return () => clearTimeout(timer);
 	});
+
+	// Premium image cycling effect
+	$effect(() => {
+		if (allImages.length <= 1) return;
+		
+		const interval = setInterval(() => {
+			currentImageIndex = (currentImageIndex + 1) % allImages.length;
+		}, 4000);
+		
+		return () => clearInterval(interval);
+	});
 </script>
 
 <div 
@@ -100,15 +117,19 @@
 	onmousemove={handleMouseMove}
 	{...rest}
 >
-	<!-- Animated gradient background -->
-	<div class="absolute inset-0 opacity-60">
+	<!-- Premium animated gradient background -->
+	<div class="absolute inset-0 opacity-70">
 		<div 
-			class="absolute inset-0 bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 animate-pulse"
-			style="animation-duration: 8s;"
+			class="absolute inset-0 bg-gradient-to-r from-primary/25 via-secondary/25 to-primary/25 animate-pulse"
+			style="animation-duration: 6s;"
 		></div>
 		<div 
-			class="absolute inset-0 bg-gradient-to-l from-secondary/10 via-primary/10 to-secondary/10 animate-pulse"
-			style="animation-duration: 12s; animation-delay: -2s;"
+			class="absolute inset-0 bg-gradient-to-l from-secondary/15 via-primary/15 to-secondary/15 animate-pulse"
+			style="animation-duration: 10s; animation-delay: -3s;"
+		></div>
+		<div 
+			class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 animate-pulse"
+			style="animation-duration: 14s; animation-delay: -1s;"
 		></div>
 	</div>
 
@@ -158,8 +179,8 @@
 		data-enter-container
 	>
 		<div class="grid gap-8" class:max-w-prose={centered}>
-			<!-- Title with enhanced animations -->
-			<div class="space-y-4">
+			<!-- Premium title with luxury animations -->
+			<div class="space-y-6">
 				<h1 
 					class={[
 						"text-display w-full transition-all duration-1000 ease-out",
@@ -169,26 +190,25 @@
 				>
 					<span class="block relative">
 						<AnimateText text={title} />
-						<!-- Subtle glow effect -->
-						<div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 blur-xl -z-10 opacity-50"></div>
+						<!-- Premium glow effect -->
+						<div class="absolute inset-0 bg-gradient-to-r from-primary/30 via-secondary/20 to-primary/30 blur-2xl -z-10 opacity-60"></div>
 					</span>
-					{#if !centered}
-						<span 
-							class={[
-								"text-emphasis-dim block transition-all duration-1000 ease-out",
-								isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-							]}
-							style="transition-delay: 200ms;"
-						>
-							<AnimateText text={subtitle} />
-						</span>
-					{/if}
 				</h1>
 
-				{#if centered}
+				{#if !centered}
+					<p 
+						class={[
+							"text-headline text-muted-foreground max-w-[55ch] leading-relaxed transition-all duration-1000 ease-out",
+							isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+						]}
+						style="transition-delay: 300ms;"
+					>
+						{subtitle}
+					</p>
+				{:else}
 					<p
 						class={[
-							"text-muted-foreground text-headline mx-auto block max-w-[45ch] transition-all duration-1000 ease-out",
+							"text-muted-foreground text-headline mx-auto block max-w-[50ch] leading-relaxed transition-all duration-1000 ease-out",
 							isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
 						]}
 						style="transition-delay: 400ms;"
@@ -199,11 +219,11 @@
 				{/if}
 			</div>
 
-			<!-- Enhanced CTA buttons -->
+			<!-- Premium CTA buttons -->
 			{#if callsToAction.length > 0}
 				<div 
 					class={[
-						"flex gap-4 transition-all duration-1000 ease-out",
+						"flex gap-6 transition-all duration-1000 ease-out",
 						isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
 					]}
 					style="transition-delay: 600ms;"
@@ -211,17 +231,18 @@
 				>
 					{#each callsToAction as cta, index}
 						<div class="group relative">
-							<!-- Hover glow effect -->
-							<div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-0 group-hover:opacity-20 transition duration-300"></div>
+							<!-- Premium hover glow effect -->
+							<div class="absolute -inset-2 bg-gradient-to-r from-primary via-secondary to-primary rounded-xl blur-lg opacity-0 group-hover:opacity-30 transition-all duration-500"></div>
 							
 							<Button
 								href={cta.href}
 								size="lg"
 								variant={index % 2 === 0 ? "primary" : "secondary"}
 								class={[
-									"relative max-lg:hidden transform transition-all duration-300 ease-out",
-									"hover:scale-105 hover:-translate-y-1",
-									"active:scale-95 active:translate-y-0"
+									"relative max-lg:hidden transform transition-all duration-500 ease-out",
+									"hover:scale-110 hover:-translate-y-2",
+									"active:scale-95 active:translate-y-0",
+									"font-medium tracking-wide"
 								]}
 							>
 								{cta.label}
@@ -232,9 +253,10 @@
 								size="md"
 								variant={index % 2 === 0 ? "primary" : "secondary"}
 								class={[
-									"relative lg:hidden transform transition-all duration-300 ease-out",
-									"hover:scale-105 hover:-translate-y-1",
-									"active:scale-95 active:translate-y-0"
+									"relative lg:hidden transform transition-all duration-500 ease-out",
+									"hover:scale-110 hover:-translate-y-2",
+									"active:scale-95 active:translate-y-0",
+									"font-medium tracking-wide"
 								]}
 							>
 								{cta.label}
@@ -245,8 +267,8 @@
 			{/if}
 		</div>
 
-		<!-- Enhanced image section -->
-		{#if imageSrc}
+		<!-- Premium multi-image section -->
+		{#if allImages.length > 0}
 			<div 
 				class={[
 					"relative group transition-all duration-1000 ease-out",
@@ -254,39 +276,84 @@
 				]}
 				style="transition-delay: 800ms;"
 			>
-				<!-- Image container with enhanced effects -->
-				<div class="relative overflow-hidden rounded-2xl">
-					<!-- Gradient overlay -->
-					<div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent z-10"></div>
+				<!-- Main image container with luxury effects -->
+				<div class="relative overflow-hidden rounded-3xl">
+					<!-- Premium gradient overlays -->
+					<div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-10"></div>
+					<div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 z-10"></div>
 					
-					<!-- Animated border -->
-					<div class="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-primary rounded-2xl opacity-0 group-hover:opacity-30 transition-all duration-500 animate-pulse"></div>
+					<!-- Luxury animated border -->
+					<div class="absolute -inset-2 bg-gradient-to-r from-primary via-secondary via-primary to-secondary rounded-3xl opacity-0 group-hover:opacity-40 transition-all duration-700 animate-pulse" style="animation-duration: 3s;"></div>
 					
-					<img
-						src={imageSrc}
-						alt="Hero visual"
-						class={[
-							"relative w-full h-auto object-cover transition-all duration-700 ease-out",
-							"group-hover:scale-105 group-hover:brightness-110"
-						]}
-						onerror={handleImageError}
-					/>
+					<!-- Image cycling container -->
+					<div class="relative aspect-video">
+						{#each allImages as image, index}
+							<img
+								src={image}
+								alt="Premium manufacturing visual {index + 1}"
+								class={[
+									"absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out",
+									"group-hover:scale-105 group-hover:brightness-110",
+									currentImageIndex === index ? "opacity-100" : "opacity-0"
+								]}
+								onerror={handleImageError}
+							/>
+						{/each}
+					</div>
 					
-					<!-- Floating particles on hover -->
-					<div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-						{#each Array(6) as _, i}
+					<!-- Premium floating elements on hover -->
+					<div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+						{#each Array(8) as _, i}
 							<div
-								class="absolute w-2 h-2 bg-primary/60 rounded-full animate-ping"
+								class="absolute w-3 h-3 bg-gradient-to-r from-primary/60 to-secondary/60 rounded-full animate-ping"
 								style="
-									left: {20 + i * 15}%;
-									top: {10 + i * 12}%;
-									animation-delay: {i * 200}ms;
-									animation-duration: {2000 + i * 300}ms;
+									left: {15 + i * 12}%;
+									top: {8 + i * 10}%;
+									animation-delay: {i * 300}ms;
+									animation-duration: {2500 + i * 400}ms;
 								"
 							></div>
 						{/each}
 					</div>
+					
+					<!-- Image indicators -->
+					{#if allImages.length > 1}
+						<div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-20">
+							{#each allImages as _, index}
+								<button
+									class={[
+										"w-2 h-2 rounded-full transition-all duration-300",
+										currentImageIndex === index 
+											? "bg-primary scale-125" 
+											: "bg-white/50 hover:bg-white/70"
+									]}
+									onclick={() => currentImageIndex = index}
+									aria-label="View image {index + 1}"
+								></button>
+							{/each}
+						</div>
+					{/if}
 				</div>
+				
+				<!-- Secondary images preview -->
+				{#if secondaryImages.length > 0}
+					<div class="flex gap-3 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+						{#each secondaryImages.slice(0, 3) as image, index}
+							<button 
+								class="relative w-20 h-12 rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300"
+								onclick={() => currentImageIndex = index + 1}
+								aria-label="Switch to preview image {index + 1}"
+							>
+								<img
+									src={image}
+									alt="Preview {index + 1}"
+									class="w-full h-full object-cover"
+								/>
+								<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+							</button>
+						{/each}
+					</div>
+				{/if}
 			</div>
 		{/if}
 	</header>
